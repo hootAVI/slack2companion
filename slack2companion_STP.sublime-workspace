@@ -1,0 +1,638 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fname",
+				"fnameCache_last"
+			],
+			[
+				"word",
+				"wordCache"
+			],
+			[
+				"family",
+				"familySize"
+			],
+			[
+				"letter",
+				"letterList"
+			],
+			[
+				"userTe",
+				"userTextList"
+			],
+			[
+				"userte",
+				"userTextList"
+			],
+			[
+				"vowelList",
+				"vowelListSize"
+			],
+			[
+				"lname",
+				"lnameCache"
+			],
+			[
+				"ending",
+				"endingTypes"
+			],
+			[
+				"generate",
+				"generateCons"
+			],
+			[
+				"gen",
+				"generateCons"
+			],
+			[
+				"gener",
+				"generateCons"
+			],
+			[
+				"form",
+				"formChoice"
+			],
+			[
+				"check",
+				"checkAccountAmmount"
+			],
+			[
+				"re",
+				"removeFirst"
+			],
+			[
+				"Q",
+				"Qingguo"
+			],
+			[
+				"int",
+				"interval"
+			],
+			[
+				"text-de",
+				"text-decoration-style"
+			],
+			[
+				"deco",
+				"text-decoration-style"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"bloc",
+				"inline-block"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"background-i",
+				"background-size"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"pr",
+				"private"
+			],
+			[
+				"month",
+				"month1"
+			],
+			[
+				"de",
+				"default_date"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"box-s",
+				"box-shadow"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"backgro",
+				"background-image"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ErrorContainer.gd",
+			"settings":
+			{
+				"buffer_size": 1516,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"margo",
+				"GoSublime: Restart Margo"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/G/Godot/Projects - 4.x/Slack2Companion",
+		"/G/Godot/Projects - 4.x/Slack2Companion/Singletons"
+	],
+	"file_history":
+	[
+		"/G/Go Projects/Learning Go/cmd/tutorial_1/main.go",
+		"/C/Users/aweso/AppData/Roaming/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/G/Myst Extracting/Riveal - Source/all/d.java",
+		"/G/Myst Extracting/RecompilingProgram in Golang/recompiler.go",
+		"/G/Myst Extracting/RecompilingProgram in Golang/go.mod",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Slack 2 Companion/last_saved_commands.conf",
+		"/H/Users/awesomemann1234/Desktop/test.conf",
+		"/H/Users/awesomemann1234/Desktop/Folders/MC Server/server.properties",
+		"/C/Users/aweso/AppData/Local/Temp/Rar$DIa0.816/Riveal.properties",
+		"/G/Myst Extracting/Riveal - Source/all/a.java",
+		"/G/Myst Extracting/Riveal - Source/all/aa.java",
+		"/G/Myst Extracting/Riveal - Source/all/ab.java",
+		"/G/Myst Extracting/Riveal - Source/all/ac.java",
+		"/G/Myst Extracting/Riveal - Source/all/ad.java",
+		"/G/Myst Extracting/Riveal - Source/all/h.java",
+		"/G/Myst Extracting/Riveal - Source/all/Riveal$1.java",
+		"/G/Myst Extracting/Riveal - Source/all/Riveal$1$1.java",
+		"/G/Myst Extracting/Riveal - Source/all/VAGExtractor.java",
+		"/G/Myst Extracting/Riveal - Source/all/THUMExtractor.java",
+		"/G/Myst Extracting/Riveal - Source/all/x.java",
+		"/G/Myst Extracting/Riveal - Source/all/z.java",
+		"/G/Myst Extracting/Riveal - Source/all/RotateImageExtractor.java",
+		"/G/Myst Extracting/Riveal - Source/all/Riveal.properties",
+		"/I/STEAMLIBRARY/steamapps/common/Myst Masterpiece/MYST.DAT",
+		"/G/Myst Extracting/all/m.class",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/RETCONN/local_shipstat.tres",
+		"/G/Godot/Projects - 4.x/RETCONN/Scripts/MeshToMesh/3d_circle.tscn",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/RETCONN/local_custom_colors.tres",
+		"/G/Go Projects/Robert Slack Heroku Relay Proj/heroku_relay_startpoint.go",
+		"/G/Go Projects/Robert Slack Heroku Relay Proj/go.mod",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/RETCONN/local_hardpoints.tres",
+		"/G/Godot/Projects - 4.x/RETCONN/Resources/ShipStats/ShipStats_Raven.tres",
+		"/G/Godot/Projects - 4.x/RETCONN/Resources/ShipStats/ShipStats_Condor.tres",
+		"/G/Godot/Projects - 4.x/RETCONN/Resources/ShipStats/ShipStats_Lapwing.tres",
+		"/C/Users/aweso/AppData/Local/Temp/Rar$DIa0.277/save_001.xml",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/3D Adventure Minigolf- Ultra Shot/options.avi",
+		"/I/STEAMLIBRARY/steamapps/common/X4 Foundations/extensions/x4_fireandsmoke/content.xml",
+		"/G/Godot/Projects - 4.1/Infinite ARPG/MiscShaders/dithering.gdshader",
+		"/C/GAMES/STAR_WARS_TRILOGY_ARCADE/Config/Games.xml",
+		"/G/Godot/Projects - 4.1/GodotGolf4.1/Menus/Options/MSAAPreviewRotation.vs",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/worlds/el game/player_data.pref",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/worlds/the boyz meet/player_data.pref",
+		"/C/Users/aweso/AppData/Roaming/Godot/recent_dirs",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/world_list.pref",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/profiles.pref",
+		"/G/Godot/Projects - 4.1/Infinite ARPG/project.godot",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/worlds/el game/world.pref",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/worlds/Heath's @ and # world/world.pref",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/serverlist.pref",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/worlds/Random ass seed/world.pref",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/worlds/yello/world.pref",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/worlds/heath/world.pref",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/worlds/DefaultName/world.pref",
+		"/G/Godot/Projects - 4.1/Infinite ARPG/Gam7BF3.tmp",
+		"/G/Godot/Projects - 4.1/Infinite ARPG/.godot/editor/recent_dirs",
+		"/G/Godot/Projects - 4.1/Infinite ARPG/.godot/export_credentials.cfg",
+		"/G/Godot/Projects - 4.1/Infinite ARPG/.godot/global_script_class_cache.cfg",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/options.pref",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/helf.pref",
+		"/H/Users/awesomemann1234/Desktop/Folders/Games/Minecraft/MinecraftServer/server.properties",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/Infinite ARPG/active.pref",
+		"/G/Godot/Projects - 4.1/Infinite ARPG/RandomTerrain/README.md",
+		"/G/Godot/Projects - 4.1/godot-demo-projects-master/3d/README.md",
+		"/G/Godot/Projects - 3.x/sprite_shaders/shaders/offsetshadow.shader",
+		"/C/Users/aweso/AppData/Roaming/Blender Foundation/Blender/3.5/scripts/addons/SpryTile/sprytile_gui.py",
+		"/I/STEAMLIBRARY/SteamApps/common/Skyrim Special Edition/installscript.vdf",
+		"/G/Godot/Projects - 3.x/sprite_shaders/shaders/dropshadow.shader",
+		"/H/Users/awesomemann1234/Desktop/hal logo.svg",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/3D Adventure Minigolf/scores.avi",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/3D Adventure Minigolf/randNames_Source.avi",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/3D Adventure Minigolf/last_players.avi",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/3D Adventure Minigolf/options.avi",
+		"/C/Users/aweso/AppData/LocalLow/SKS/TheForestDedicatedServer/ds/Server.cfg",
+		"/C/Users/aweso/AppData/Local/Temp/Rar$DIa0.185/style-ideas-todo.md",
+		"/H/Users/awesomemann1234/Downloads/BlockyOS-main/BlockyOS-main/README.md",
+		"/H/Users/awesomemann1234/Desktop/Folders/Games/3D Minigolf/Sierra/MGDeluxe/DATA/hauntedh.rbx",
+		"/C/Users/aweso/AppData/Roaming/Godot/app_userdata/3D Adventure Minigolf/scores.json",
+		"/I/Others/MW5Mercs/MW5Mercs/Mods/Smooth_Laser/mod.json",
+		"/H/Users/awesomemann1234/Desktop/settings",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CA_Clip3.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/BrainThatWouldntDie_0_06_23.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CA_Clip4.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CA_Clip5.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CA_Clip6.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/captain_calamity-Clip002.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/captain_calamity-Clip001.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/captain_calamity-Clip004.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/captain_calamity-Clip005.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CB_Clip1.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CB_Clip2.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/captain_calamity-Clip003.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CB_Clip3.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CB_Clip5.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CB_Clip4.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CCandCompany-Clip001.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CCandCompany-Clip004.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CCandCompany-Clip005.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Censorship_00-m-6.3.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CCandCompany-Clip002.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cheating_1.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cheating_2.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cheating_4.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cheating_5.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cheating_6.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cheating_7.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cheating_3.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Choosing_2.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Choosing_1.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Choosing_4.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Choosing_5.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Choosing_3.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CindyGoesToAParty_01_53.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CindyGoesToAParty_01_02.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CindyGoesToAParty_30_16.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CityOfTheDead_0_06_26.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CityOfTheDead_0_03_50.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CityOfTheDead_0_06_56.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CityOfTheDead_0_08_06.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CityOfTheDead_0_28_34.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CityOfTheDead_0_46_22.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CityOfTheDead_1_04_37.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CityOfTheDead_0_41_11.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CityOfTheDead_1_05_12.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cosmos_War_of_the_Planets_0_06_23.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/CityOfTheDead_1_05_25.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cosmos_War_of_the_Planets_0_10_56.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cosmos_War_of_the_Planets_0_17_44.srt",
+		"/H/Users/Heefus/Documents/What the Dub mods/Source/Subtitles/Cosmos_War_of_the_Planets_0_21_35.srt"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"fbx",
+			"gltf",
+			".obj-ect",
+			".obj",
+			"wharf",
+			"fov",
+			"camera",
+			"1.47",
+			"147",
+			"yurrian",
+			"Yurrian",
+			"lnameCache",
+			"dict_prefs",
+			"DictFiles",
+			"hello",
+			"r_",
+			">\n",
+			"breadc",
+			"store_result",
+			"interface",
+			"}\n",
+			"?>",
+			"$conn",
+			"users",
+			"main.php",
+			")){\n",
+			">\n",
+			"welcome.php",
+			"dark",
+			"logo2",
+			"logo1",
+			"logo2",
+			"logo3",
+			"utf8_0900_ai_ci",
+			"utf8mb4",
+			"utf8mb4unicode520_ci",
+			"Christopher",
+			"Simmons",
+			"JACQUELINE.LANGSTON@LIPSCOMB.EDU",
+			"Chris.Simmons@lipscomb.edu",
+			"912",
+			"1215",
+			"Heath",
+			"William",
+			"Jinkins",
+			"whjinkins@mail.lipscomb.edu",
+			"Jinkins",
+			"L22793216",
+			"whjinkins@mail.lipscomb.edu",
+			"Heath",
+			"William",
+			"Jinkins",
+			"essentials.gm",
+			"vanish",
+			"chat",
+			":\n",
+			"motd",
+			"/help",
+			"change-playerlist",
+			"prefix",
+			"motd",
+			"prefix",
+			"'~'\n",
+			"chat",
+			"pcap",
+			"preprocessor",
+			"processor",
+			"unsuccessful",
+			"unicode.map",
+			"$rule_path",
+			"rule_path",
+			"rules_path",
+			"rules",
+			"dynamic",
+			"\\etc",
+			"/etc",
+			"/exe",
+			"$RULE_PATH",
+			"pcap",
+			"metadata",
+			"preprocessor",
+			" ",
+			"vnetbios",
+			"mount",
+			"drive",
+			"\"\n",
+			"i want to help",
+			"archer",
+			"a",
+			"end",
+			"front",
+			"array",
+			"capacity",
+			"Integer",
+			"\");",
+			"name",
+			"endtime",
+			"starttime",
+			"appointmentDuration",
+			"import java.util.Scanner;\n\n DentalAppointment {\n    Person person;\n    Time starttime;\n    Time endtime;\n    Date date;\n    private int appointmentDuration;\n\n    public DentalAppointment(String last, String first, int month, int day, int year, int hour, int minute){\n        person = new Person(last,first,\"X\");\n        starttime = new Time(hour,minute);\n\n        endtime = new Time(hour,minute);\n        date = new Date(month, day, year);\n\n        this.appointmentDuration = 30;\n        endtime.add(appointmentDuration);\n    }\n\n    public DentalAppointment(String first, String last, int month, int day, int year, int hour, int minute, int appointmentDuration){\n        person = new Person(last,first,\"X\");\n        starttime = new Time(hour,minute);\n\n        endtime = new Time(hour,minute);\n        date = new Date(month, day, year);\n\n        this.appointmentDuration = appointmentDuration;\n        endtime.add(this.appointmentDuration);\n    }\n\n\n    public void display(){\n        person.display();\n        date.display();\n        System.out.print(\"Dental appointment scheduled: \");\n        starttime.display();\n        System.out.print(\"Dental appointment ends: \");\n        endtime.display();\n\n    }\n    public static void main(String [] args){\n        Scanner sc = new Scanner(System.in);\n\n        DentalAppointment [] dental = new DentalAppointment[3];\n\n        for (int i =0; i <3; i++ ) {\n            System.out.print(\"First: \");\n            String first = sc.nextLine();\n            System.out.print(\"Last: \");\n            String last = sc.nextLine();\n            System.out.print(\"Month: \");\n            int month = sc.nextInt();\n            System.out.print(\"Day: \");\n            int day = sc.nextInt();\n            System.out.print(\"Year: \");\n            int year = sc.nextInt();\n            System.out.print(\"Hour: \");\n            int hour = sc.nextInt();\n            System.out.print(\"Minute: \");\n            int minute = sc.nextInt();\n            System.out.print(\"Duration (-1 for nothing): \");\n            int appointmentDuration = sc.nextInt();\n            String empty = sc.nextLine();\n\n\n            if (appointmentDuration == -1){\n                DentalAppointment app = new DentalAppointment(last,first,month,day,year,hour,minute);\n                dental[i] = app;\n                app.display();\n            }\n            else{\n                DentalAppointment app = new DentalAppointment(last,first,month,day,year,hour,minute,appointmentDuration);\n                dental[i] = app;\n                app.display();\n            }\n\n        }\n    }\n\n}\n",
+			"appointmentDuration",
+			"jumbotron",
+			"/*!",
+			"text",
+			"img",
+			"wrapperBody",
+			"navbar",
+			"candara",
+			"img",
+			"  display: block;\n  margin: auto;",
+			"wrapperBody",
+			"Canyon",
+			"nav",
+			"/ul",
+			"x",
+			"cols",
+			"tmp"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			";",
+			",",
+			"Juniper",
+			"userInput",
+			"columnsInt",
+			"splitStr"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ErrorContainer.gd",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GDScript (Godot Engine)/GDScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o://9o":
+	{
+		"height": 275.0
+	},
+	"output.GoSublime/HUD":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/GoSublime/GoSublime.sublime-build",
+	"project": "slack2companion_STP.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
