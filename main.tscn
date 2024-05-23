@@ -1,0 +1,513 @@
+[gd_scene load_steps=8 format=3 uid="uid://gk6ayvvg1iuc"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_3bior"]
+[ext_resource type="Texture2D" uid="uid://pacg6l4c4cmp" path="res://UI/spinner_progress.png" id="2_b3ypm"]
+[ext_resource type="Script" path="res://Scripts/Debugger.gd" id="3_2c7dn"]
+[ext_resource type="Script" path="res://Scripts/CommandMapping.gd" id="3_f57cd"]
+[ext_resource type="Script" path="res://ErrorContainer.gd" id="5_4cob2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l3nqq"]
+bg_color = Color(0, 0, 0, 0.686275)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eke64"]
+bg_color = Color(0.360784, 0.282353, 0.145098, 1)
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3bior")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 2
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Main" type="MarginContainer" parent="TabContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 45
+theme_override_constants/margin_top = 45
+theme_override_constants/margin_right = 45
+theme_override_constants/margin_bottom = 45
+
+[node name="Main_VBox" type="VBoxContainer" parent="TabContainer/Main"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="TabContainer/Main/Main_VBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 48
+text = "Slack2Companion"
+
+[node name="Spacer" type="Control" parent="TabContainer/Main/Main_VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.35
+
+[node name="VPair1" type="HBoxContainer" parent="TabContainer/Main/Main_VBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.35
+
+[node name="Label" type="Label" parent="TabContainer/Main/Main_VBox/VPair1"]
+layout_mode = 2
+text = "Listening to "
+
+[node name="LineEdit" type="LineEdit" parent="TabContainer/Main/Main_VBox/VPair1"]
+custom_minimum_size = Vector2(540, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "https://coe22production-notifier-a4a45daf4ae5.herokuapp.com/retrieve-requests"
+placeholder_text = "[address to listen out for POST]"
+
+[node name="VPair2" type="HBoxContainer" parent="TabContainer/Main/Main_VBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.35
+
+[node name="Label" type="Label" parent="TabContainer/Main/Main_VBox/VPair2"]
+layout_mode = 2
+text = "and Pushing to"
+
+[node name="LineEdit" type="LineEdit" parent="TabContainer/Main/Main_VBox/VPair2"]
+custom_minimum_size = Vector2(540, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 0
+text = "http://127.0.0.1:8888"
+placeholder_text = "[address to push command to]"
+
+[node name="VPair3" type="HBoxContainer" parent="TabContainer/Main/Main_VBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.35
+
+[node name="Label" type="Label" parent="TabContainer/Main/Main_VBox/VPair3"]
+layout_mode = 2
+text = "Every"
+
+[node name="SpinBox" type="SpinBox" parent="TabContainer/Main/Main_VBox/VPair3"]
+layout_mode = 2
+min_value = 1.0
+max_value = 5.0
+step = 0.1
+value = 1.0
+
+[node name="Label2" type="Label" parent="TabContainer/Main/Main_VBox/VPair3"]
+layout_mode = 2
+text = "seconds"
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="TabContainer/Main/Main_VBox/VPair3"]
+clip_contents = true
+custom_minimum_size = Vector2(8.06, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+step = 0.1
+fill_mode = 4
+nine_patch_stretch = true
+stretch_margin_left = 32
+stretch_margin_bottom = 32
+texture_progress = ExtResource("2_b3ypm")
+
+[node name="Spacer2" type="Control" parent="TabContainer/Main/Main_VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="StartStop" type="Button" parent="TabContainer/Main/Main_VBox"]
+self_modulate = Color(0.509804, 1, 0.533333, 1)
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+toggle_mode = true
+text = "Stopped"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Main/Main_VBox"]
+layout_mode = 2
+
+[node name="NewIncoming" type="Label" parent="TabContainer/Main/Main_VBox/HBoxContainer2"]
+modulate = Color(0.529412, 1, 0.968627, 1)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "New incoming message!"
+
+[node name="NewOutgoing" type="Label" parent="TabContainer/Main/Main_VBox/HBoxContainer2"]
+modulate = Color(0.882353, 1, 0.415686, 1)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "New outbound command!"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Main/Main_VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ListenerOutput" type="TextEdit" parent="TabContainer/Main/Main_VBox/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Waiting for incoming command..."
+editable = false
+
+[node name="PusherOutput" type="TextEdit" parent="TabContainer/Main/Main_VBox/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Waiting for outgoing command..."
+editable = false
+
+[node name="ForceCommandLabel" type="Label" parent="TabContainer/Main/Main_VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+theme_override_font_sizes/font_size = 14
+text = "Force Commands"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="TabContainer/Main/Main_VBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.35
+theme_override_constants/separation = 24
+
+[node name="lights-on" type="Button" parent="TabContainer/Main/Main_VBox/HBoxContainer3"]
+custom_minimum_size = Vector2(136, 36)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "/lights-on"
+
+[node name="lights-off" type="Button" parent="TabContainer/Main/Main_VBox/HBoxContainer3"]
+custom_minimum_size = Vector2(135.97, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "/lights-off"
+
+[node name="backuprecord" type="Button" parent="TabContainer/Main/Main_VBox/HBoxContainer3"]
+custom_minimum_size = Vector2(135.97, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "/backup-record"
+
+[node name="backupstop" type="Button" parent="TabContainer/Main/Main_VBox/HBoxContainer3"]
+custom_minimum_size = Vector2(135.97, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "/backup-stop"
+
+[node name="weenio" type="Button" parent="TabContainer/Main/Main_VBox/HBoxContainer3"]
+custom_minimum_size = Vector2(135.97, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "/weenio"
+
+[node name="Command Mapping" type="MarginContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 45
+theme_override_constants/margin_top = 45
+theme_override_constants/margin_right = 45
+theme_override_constants/margin_bottom = 20
+script = ExtResource("3_f57cd")
+
+[node name="Main_VBox" type="VBoxContainer" parent="TabContainer/Command Mapping"]
+layout_mode = 2
+
+[node name="Header" type="HBoxContainer" parent="TabContainer/Command Mapping/Main_VBox"]
+layout_mode = 2
+
+[node name="DefaultButton" type="Button" parent="TabContainer/Command Mapping/Main_VBox/Header"]
+self_modulate = Color(1, 0.913725, 0.701961, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Restore Defaults"
+
+[node name="Title" type="Label" parent="TabContainer/Command Mapping/Main_VBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 32
+text = "Command Mapping"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AddButton" type="Button" parent="TabContainer/Command Mapping/Main_VBox/Header"]
+self_modulate = Color(0.572549, 1, 0.592157, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Add New Command"
+
+[node name="CommandScroller" type="ScrollContainer" parent="TabContainer/Command Mapping/Main_VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CommandHolder" type="VBoxContainer" parent="TabContainer/Command Mapping/Main_VBox/CommandScroller"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SaveLoad_HBox" type="HBoxContainer" parent="TabContainer/Command Mapping/Main_VBox"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 25
+
+[node name="Export" type="Button" parent="TabContainer/Command Mapping/Main_VBox/SaveLoad_HBox"]
+custom_minimum_size = Vector2(125, 50)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+text = "Export"
+
+[node name="ExportDialog" type="FileDialog" parent="TabContainer/Command Mapping/Main_VBox/SaveLoad_HBox/Export"]
+mode = 3
+title = "Export Command Mapping"
+initial_position = 1
+size = Vector2i(454, 159)
+ok_button_text = "Export"
+access = 2
+filters = PackedStringArray("*.conf")
+use_native_dialog = true
+
+[node name="Import" type="Button" parent="TabContainer/Command Mapping/Main_VBox/SaveLoad_HBox"]
+custom_minimum_size = Vector2(125, 50)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+text = "Import"
+
+[node name="ImportDialog" type="FileDialog" parent="TabContainer/Command Mapping/Main_VBox/SaveLoad_HBox/Import"]
+title = "Open a File"
+size = Vector2i(454, 159)
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.conf")
+use_native_dialog = true
+
+[node name="Debugging" type="MarginContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+script = ExtResource("3_2c7dn")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="TabContainer/Debugging"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Debugging"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="PostRequest_Label" type="Label" parent="TabContainer/Debugging/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Send HTTP POST Request"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PostRequest_LineEdit" type="LineEdit" parent="TabContainer/Debugging/VBoxContainer"]
+custom_minimum_size = Vector2(512, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "http://127.0.0.1:8000/api/location/1/0/1/press"
+placeholder_text = "custom api call here"
+
+[node name="SendCall" type="Button" parent="TabContainer/Debugging/VBoxContainer"]
+custom_minimum_size = Vector2(128, 42)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Send Call"
+
+[node name="PostRequest_Log" type="TextEdit" parent="TabContainer/Debugging/VBoxContainer"]
+custom_minimum_size = Vector2(0, 156)
+layout_mode = 2
+placeholder_text = "Waiting for HTTP Request"
+editable = false
+
+[node name="Spacer" type="Control" parent="TabContainer/Debugging/VBoxContainer"]
+custom_minimum_size = Vector2(0, 17.75)
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="TabContainer/Debugging/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2.975)
+layout_mode = 2
+
+[node name="Spacer2" type="Control" parent="TabContainer/Debugging/VBoxContainer"]
+custom_minimum_size = Vector2(0, 17.75)
+layout_mode = 2
+
+[node name="PostRequest_Label2" type="Label" parent="TabContainer/Debugging/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Singleton Viewers"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LogHolder" type="HBoxContainer" parent="TabContainer/Debugging/VBoxContainer"]
+layout_mode = 2
+
+[node name="CommandOutput" type="TextEdit" parent="TabContainer/Debugging/VBoxContainer/LogHolder"]
+custom_minimum_size = Vector2(0, 156)
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "-- CommandMapper Viewer --
+
+Displays all mapped commands held
+within the singleton \"CommandMapper\""
+editable = false
+
+[node name="OtherOutput" type="TextEdit" parent="TabContainer/Debugging/VBoxContainer/LogHolder"]
+custom_minimum_size = Vector2(0, 156)
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Unused"
+editable = false
+
+[node name="Utility" type="Node" parent="."]
+
+[node name="Timer" type="Timer" parent="Utility"]
+
+[node name="HTTPListener" type="HTTPRequest" parent="Utility"]
+
+[node name="HTTPPusher" type="HTTPRequest" parent="Utility"]
+
+[node name="ErrorContainer" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_4cob2")
+
+[node name="ErrorBG" type="Panel" parent="ErrorContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l3nqq")
+
+[node name="ErrorWindow" type="Panel" parent="ErrorContainer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -183.0
+offset_top = -112.0
+offset_right = 183.0
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_eke64")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ErrorContainer/ErrorWindow"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopPanel" type="ColorRect" parent="ErrorContainer/ErrorWindow/VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+color = Color(0.156863, 0.12549, 0.0862745, 1)
+
+[node name="Message_Title" type="Label" parent="ErrorContainer/ErrorWindow/VBoxContainer/TopPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Message Title"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="ErrorContainer/ErrorWindow/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="Message_Body" type="Label" parent="ErrorContainer/ErrorWindow/VBoxContainer/MarginContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_vertical = 3
+text = "You suck ass.
+line2
+okay this is line 3!!!!
+woahhhh line 4 alert
+whatever line 5"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="ErrorContainer/ErrorWindow/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="Deny_Button" type="Button" parent="ErrorContainer/ErrorWindow/VBoxContainer/ButtonContainer"]
+self_modulate = Color(1, 0.6, 0.568627, 1)
+custom_minimum_size = Vector2(128, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Deny"
+
+[node name="Confirm_Button" type="Button" parent="ErrorContainer/ErrorWindow/VBoxContainer/ButtonContainer"]
+self_modulate = Color(0.537255, 1, 0.545098, 1)
+custom_minimum_size = Vector2(128, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Confirm"
+
+[node name="Control" type="Control" parent="ErrorContainer/ErrorWindow/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[connection signal="tab_changed" from="TabContainer" to="." method="_on_tab_container_tab_changed"]
+[connection signal="value_changed" from="TabContainer/Main/Main_VBox/VPair3/SpinBox" to="." method="_on_spin_box_value_changed"]
+[connection signal="toggled" from="TabContainer/Main/Main_VBox/StartStop" to="." method="_on_start_stop_toggled"]
+[connection signal="pressed" from="TabContainer/Main/Main_VBox/HBoxContainer3/lights-on" to="." method="_on_lightson_pressed"]
+[connection signal="pressed" from="TabContainer/Main/Main_VBox/HBoxContainer3/lights-off" to="." method="_on_lightsoff_pressed"]
+[connection signal="pressed" from="TabContainer/Main/Main_VBox/HBoxContainer3/backuprecord" to="." method="_on_video_pressed"]
+[connection signal="pressed" from="TabContainer/Main/Main_VBox/HBoxContainer3/backupstop" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="TabContainer/Main/Main_VBox/HBoxContainer3/weenio" to="." method="_on_weenio_pressed"]
+[connection signal="pressed" from="TabContainer/Command Mapping/Main_VBox/Header/DefaultButton" to="TabContainer/Command Mapping" method="_on_default_button_pressed"]
+[connection signal="pressed" from="TabContainer/Command Mapping/Main_VBox/Header/AddButton" to="TabContainer/Command Mapping" method="_on_button_pressed"]
+[connection signal="pressed" from="TabContainer/Command Mapping/Main_VBox/SaveLoad_HBox/Export" to="TabContainer/Command Mapping" method="_on_export_pressed"]
+[connection signal="file_selected" from="TabContainer/Command Mapping/Main_VBox/SaveLoad_HBox/Export/ExportDialog" to="TabContainer/Command Mapping" method="_on_export_dialog_file_selected"]
+[connection signal="pressed" from="TabContainer/Command Mapping/Main_VBox/SaveLoad_HBox/Import" to="TabContainer/Command Mapping" method="_on_import_pressed"]
+[connection signal="file_selected" from="TabContainer/Command Mapping/Main_VBox/SaveLoad_HBox/Import/ImportDialog" to="TabContainer/Command Mapping" method="_on_import_dialog_file_selected"]
+[connection signal="request_completed" from="TabContainer/Debugging/HTTPRequest" to="TabContainer/Debugging" method="_on_http_request_request_completed"]
+[connection signal="pressed" from="TabContainer/Debugging/VBoxContainer/SendCall" to="TabContainer/Debugging" method="_on_button_pressed"]
+[connection signal="timeout" from="Utility/Timer" to="." method="_on_timer_timeout"]
+[connection signal="request_completed" from="Utility/HTTPListener" to="." method="_on_http_listener_request_completed"]
+[connection signal="pressed" from="ErrorContainer/ErrorWindow/VBoxContainer/ButtonContainer/Deny_Button" to="ErrorContainer" method="_on_deny_button_pressed"]
+[connection signal="pressed" from="ErrorContainer/ErrorWindow/VBoxContainer/ButtonContainer/Confirm_Button" to="ErrorContainer" method="_on_confirm_button_pressed"]
