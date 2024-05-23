@@ -1,0 +1,6 @@
+res://main.tscn
+res://Scenes/CommandLine/command_line.tscn
+res://Scripts/CommandMapping.gd
+res://Singletons/CommandMapper.gd
+res://Scenes/CommandLine/Command_Line.gd
+res://main.gd
